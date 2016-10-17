@@ -1,4 +1,5 @@
 #bottom {
   top: 1000px;
   position: relative;
+  display: none;
 }

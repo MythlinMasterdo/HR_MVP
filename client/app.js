@@ -1,11 +1,14 @@
 var App = angular.module('app', [])
+
 .controller('userInput', function appControllerFunc($scope, $interval, $location, $anchorScroll, $http) {
+
   angular.element(document).ready(function() {
     $scope.counter = 0;
     var zuckTimer = $interval(function() {
         $scope.counter+= 1;
       }, 106);
   });
+
   $scope.income = undefined;
 
   $http.get('/api/income')
@@ -35,9 +38,12 @@ var App = angular.module('app', [])
     $scope.perspective = perspective($scope.income);
   };
 
-  $scope.scroll = function() {
-    $location.hash('bottom');
-    console.log('clicked');
-    $anchorScroll();
+  // $scope.scroll = function() {
+  //   $location.hash('bottom');
+  //   console.log('clicked');
+  //   $anchorScroll();
+  // };
+  $scope.showDiv = function() {
+    $('#bottom').css('display', 'block');
   };
 });
