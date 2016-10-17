@@ -6,7 +6,7 @@ var App = angular.module('app', [])
         $scope.counter+= 1;
       }, 106);
   });
-  $scope.income = 0;
+  $scope.income;
 
   $scope.userInputIncome = function() {
     console.log($scope.income);
