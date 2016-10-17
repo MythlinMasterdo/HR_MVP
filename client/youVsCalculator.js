@@ -109,6 +109,11 @@ var perspective = function(userIncome) {
   }
 };
 
+var forYou = function(userIncome) {
+  var timeInYears = Math.round(zuckIncomeYearly/userIncome);
+  return 'that means it would take you ' + timeInYears + ' years to earn the same';
+};
+
 var counter = 0;
 var zuckPayTimer = setInterval(function() {
     return counter+= 1;

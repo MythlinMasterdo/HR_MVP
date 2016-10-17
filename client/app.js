@@ -36,13 +36,9 @@ var App = angular.module('app', [])
   $scope.userInputIncome = function() {
     $scope.youVsZuck = youVsZuckerberg($scope.income);
     $scope.perspective = perspective($scope.income);
+    $scope.forYou = forYou($scope.income);
   };
 
-  // $scope.scroll = function() {
-  //   $location.hash('bottom');
-  //   console.log('clicked');
-  //   $anchorScroll();
-  // };
   $scope.showDiv = function() {
     $('#bottom').css('display', 'block');
   };

@@ -14,11 +14,12 @@
         <div>
           <h2>Enter your Income</h2>
           <input type='number' ng-model='income' placeholder='put income here'></input>
-          <input id='showHideButton' type='button' value='submit' ng-click='userInputIncome(); scroll(); saveIncome(); showDiv()'></input>
+          <input id='showHideButton' type='button' value='submit' ng-click='userInputIncome(); scroll(); saveIncome(); showDiv();'></input>
         </div>
         <div id='bottom'>
           <h3>{{ youVsZuck }}</h3>
           <h3>{{ perspective }}</h3>
+          <h4>{{ forYou }}</h4>
           <h3>Zuckerberg has earned: {{ '$' + counter }} since you have been on this page</h3>
         </div>
       </div>

@@ -19,7 +19,7 @@ app.get('/api/income', function(req, res) {
 });
 
 app.get('*', function(req, res) {
-  res.sendfile(path.join(__dirname + '/client/index.html'));
+  res.sendFile(path.join(__dirname + '/client/index.html'));
 });
 
 app.post('/api/income', function(req, res) {
