@@ -95,9 +95,9 @@ var perspectiveHelperMonthly = function(userIncome) {
 
 var perspective = function(userIncome) {
   if(userIncome >= zuckIncomeYearly) {
-    return "We have nothing to put in perspective for you, you win";
+    return "We have nothing to put in perspective for you, you win.";
   } else if(userIncome >= zuckIncomeMonthly) {
-    return "We still have nothing to put in perspective for you";
+    return "We still have nothing to put in perspective for you.";
   } else if(userIncome >= zuckIncomeDaily) {
     return perspectiveHelperYearly(userIncome);
   } else if(userIncome >= zuckIncomeHourly) {
