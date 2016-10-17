@@ -10,23 +10,29 @@ var App = angular.module('app', [])
 
   $http.get('/api/income')
     .success(function(data) {
-      $scope.getIncome = data;
       console.log('get data', data);
     })
     .error(function(data) {
       console.log('get err', data);
     });
 
+    var incomeData = {
+      income: $scope.income
+    };
+
+  $scope.saveIncome = function() {
+    $http.post('/api/income', {income: $scope.income})
+    .success(function(data) {
+      console.log('post data', data);
+    })
+    .error(function(data) {
+      console.log('post err', data);
+    });
+  };
+
   $scope.userInputIncome = function() {
     $scope.youVsZuck = youVsZuckerberg($scope.income);
     $scope.perspective = perspective($scope.income);
-    $http.post('/api/income')
-      .success(function(data) {
-        console.log('data post', data);
-      })
-      .error(function(data) {
-        console.log('post err', data);
-      });
   };
 
   $scope.scroll = function() {
