@@ -6,7 +6,7 @@ var app = express();
 var port = process.env.PORT || 3000;
 
 app.use(parser.json());
-app.use(express.static(__dirname + './client/index.html'));
+// app.use(express.static(__dirname + './client/index.html'));
 
 app.get('/', function(req, res) {
   youVsModel.find(function(err, results) {
@@ -20,10 +20,10 @@ app.get('/', function(req, res) {
 app.post('/', function(req, res) {
   var income = req.body.income;
 
-  var income2 = new youVsModel({
+  var newUserIncome = new youVsModel({
     income: income
   });
-  income2.save(function(err, results) {
+  newUserIncome.save(function(err, results) {
     if(err) {
       return console.log('err', err);
     }
