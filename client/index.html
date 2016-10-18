@@ -8,6 +8,7 @@
   </head>
   <body>
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.0/jquery.scrollTo.min.js"></script>
     <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js'></script>
     <script src='http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js'></script>
     <script src='http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js'></script>
@@ -21,11 +22,11 @@
         <div class='incomeInfo'>
           <h2 class='md-display-2'>Enter your Income</h2>
           <input type='number' ng-model='income' placeholder='Enter income here'></input>
-          <input id='showHideButton' type='button' value='submit' ng-click='userInputIncome(); scroll(); saveIncome(); showDiv(); saveToScope();'></input>
+          <input id='showHideButton' type='button' value='submit' ng-click='userInputIncome(); scroll(); saveIncome(); showDiv(); saveToScope(); scrollToSelection();'></input>
         </div>
         <div id='bottom'>
           <div>
-            <h3 class='md-display-4'>It would take Zuckerberg</h3>
+            <h3 class='md-display-4' ng-click='scrollToSelection()'>It would take Zuckerberg</h3>
             <h3 class='numberCircle'>{{ youVsZuck }}</h3>
             <h3 class='md-display-3'>to earn your income</h3>
             <h3 class='md-display-4'>That means....</h3>

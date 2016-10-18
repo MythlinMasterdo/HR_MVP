@@ -42,4 +42,10 @@ var App = angular.module('app', [])
   $scope.showDiv = function() {
     $('#bottom').css('display', 'block');
   };
+
+  $scope.scrollToSelection = function() {
+    $.scrollTo('.numberCircle', {
+      duration: 600
+    });
+  };
 });
