@@ -39,7 +39,7 @@
   top: -200px !important;
 }
 
-.student {
+.blueSpan {
   color: #3b5998;
 }
 
@@ -153,12 +153,18 @@ body {
 
 .companyRevenue {
   color: white;
+  font-size: 64px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .fidi {
   color: white;
+  font-size: 64px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .chiron {
   color: white;
+  font-size: 64px;
+  font-family: 'Roboto', sans-serif;
 }
