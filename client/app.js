@@ -1,6 +1,6 @@
 var App = angular.module('app', [])
 
-.controller('userInput', function appControllerFunc($scope, $interval, $location, $anchorScroll, $http) {
+.controller('userInput', function appControllerFunc($scope, $interval, $http) {
 
   angular.element(document).ready(function() {
     $scope.counter = 0;
