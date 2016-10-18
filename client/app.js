@@ -5,8 +5,8 @@ var App = angular.module('app', [])
   angular.element(document).ready(function() {
     $scope.counter = 0;
     var zuckTimer = $interval(function() {
-        $scope.counter+= 1;
-      }, 106);
+        $scope.counter+= 25;
+      }, 44);
   });
 
   $scope.income = undefined;

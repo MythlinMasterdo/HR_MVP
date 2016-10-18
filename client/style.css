@@ -2,3 +2,27 @@
   position: relative;
   display: none;
 }
+.hasEarned {
+  background-color: #dfe3ee;
+}
+
+.forYou {
+  background-color: #dfe3ee;
+}
+
+.perspective {
+  background-color: #dfe3ee;
+}
+
+body {
+  background-color: #8b9dc3;
+}
+
+.incomeInfo {
+  text-align: center;
+}
+
+.fbLogo {
+  width: 5%;
+  height: 5%;
+}
