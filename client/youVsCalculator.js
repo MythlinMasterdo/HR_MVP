@@ -111,7 +111,7 @@ var perspective = function(userIncome) {
 
 var forYou = function(userIncome) {
   var timeInYears = Math.round(zuckIncomeYearly/userIncome);
-  return 'that means it would take you ' + timeInYears + ' years to earn the same';
+  return 'it would take you ' + timeInYears + ' years to earn the same';
 };
 
 var counter = 0;

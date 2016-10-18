@@ -9,6 +9,17 @@
 
 .forYou {
   color: white;
+  font-size: 64px;
+}
+
+.markIncomeYearly {
+  color: white;
+  font-size: 64px;
+}
+
+.markIncomeDaily {
+  color: white;
+  font-size: 64px;
 }
 
 .perspective {
