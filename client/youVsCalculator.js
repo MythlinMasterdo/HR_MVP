@@ -113,8 +113,3 @@ var forYou = function(userIncome) {
   var timeInYears = Math.round(zuckIncomeYearly/userIncome);
   return timeInYears;
 };
-
-var counter = 0;
-var zuckPayTimer = setInterval(function() {
-    return counter+= 1;
-  }, 106);

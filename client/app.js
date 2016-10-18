@@ -14,8 +14,10 @@ var App = angular.module('app', [])
   $http.get('/api/income')
     .success(function(data) {
       for(var i = 0; i < data.length; i++) {
-        $scope.incomeToday = $scope.incomeToday += data[i].income;
+        $scope.incomeToday = Math.round($scope.incomeToday += data[i].income);
       }
+      $scope.userAvgIncome = Math.round($scope.incomeToday / data.length);
+      console.log('userAvg', $scope.userAvgIncome);
       console.log('income today', $scope.incomeToday);
     })
     .error(function(data) {

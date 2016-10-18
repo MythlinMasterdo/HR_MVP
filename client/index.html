@@ -66,6 +66,13 @@
           <h3 class='perspective'>{{ perspective }}</h3>
           <h3 class='hasEarned'>Zuckerberg has earned <span class='blueSpanCounter'>{{ '$' + counter }}</span> since you have been on this page</h3>
           <img class='scrollBtn6' ng-click='scrollToSelection7()' src='scrollBtn.png'/>
+          <div class='userStats'>
+            <h3>User Stats: </h3>
+            <h3 class='userIncomeTitle'>Average User Income: </h3>
+            <h3 class='userAvgIncome'>{{ '$' + userAvgIncome }}</h3>
+            <h3 class='sumIncomeTitle'>Sum of all incomes entered in the past 24 hours:</h3>
+            <h3 class='incomeToday'>{{ '$' + incomeToday }}</h3>
+          </div>
         </div>
       </div>
     </div>
