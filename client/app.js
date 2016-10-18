@@ -60,4 +60,10 @@ var App = angular.module('app', [])
       duration: 800
     });
   };
+
+  $scope.scrollToSelection4 = function() {
+    $.scrollTo({left: -1500, top: 3200}, {
+      duration: 800
+    });
+  };
 });

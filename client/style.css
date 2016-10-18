@@ -184,3 +184,11 @@ body {
   height: 5%;
   left: 310px;
 }
+
+.scrollBtn3 {
+  position: relative;
+  width: 5%;
+  height: 5%;
+  left: 610px;
+  top: 25px;
+}
