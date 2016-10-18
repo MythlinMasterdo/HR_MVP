@@ -168,3 +168,8 @@ body {
   font-size: 64px;
   font-family: 'Roboto', sans-serif;
 }
+
+.scrollBtn {
+  width: 5%;
+  height: 5%;
+}
