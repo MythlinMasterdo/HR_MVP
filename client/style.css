@@ -23,8 +23,8 @@
   font-size: 95px;
   font-family: 'Roboto', sans-serif;
   border-style: solid;
-  border-color: #3b5998;
-  border-width: 2px;
+  border-color: #666;
+  border-width: 4px;
   border-radius: 10px;
   box-sizing: border-box;
   width: 30%;
@@ -36,6 +36,11 @@
   margin: auto;
   position: relative !important;
   text-align: center !important;
+  top: -200px !important;
+}
+
+.student {
+  color: #3b5998;
 }
 
 .dailyAverage {
@@ -144,4 +149,16 @@ body {
   position: relative !important;
   left: 50px !important;
   text-align: left !important;
+}
+
+.companyRevenue {
+  color: white;
+}
+
+.fidi {
+  color: white;
+}
+
+.chiron {
+  color: white;
 }
