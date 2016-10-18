@@ -20,10 +20,12 @@
         <div class='incomeInfo'>
           <h2 class='md-display-2'>Enter your Income</h2>
           <input type='number' ng-model='income' placeholder='Enter income here'></input>
-          <input id='showHideButton' type='button' value='submit' ng-click='userInputIncome(); scroll(); saveIncome(); showDiv();'></input>
+          <input id='showHideButton' type='button' value='submit' ng-click='userInputIncome(); scroll(); saveIncome(); showDiv(); saveToScope();'></input>
         </div>
         <div id='bottom'>
-          <h3 class='md-display-2'>{{ youVsZuck }}</h3>
+          <h3 class='md-display-1'>It would take Zuckerberg</h3>
+          <h3 class='numberCircle'>{{ youVsZuck }}</h3>
+          <h3 class='md-display-1'>to earn your income</h3>
           <h3 class='perspective'>{{ perspective }}</h3>
           <h3 class='hasEarned'>Zuckerberg has earned {{ '$' + counter }} since you have been on this page</h3>
           <h4 class='forYou'>{{ forYou }}</h4>

@@ -1,6 +1,7 @@
 #bottom {
   position: relative;
   display: none;
+  text-align: center;
 }
 .hasEarned {
   background-color: #dfe3ee;
@@ -23,6 +24,27 @@ body {
 }
 
 .fbLogo {
+  position: relative;
+  left: 380px;
+  top: 103px;
   width: 5%;
   height: 5%;
+}
+
+.numberCircle {
+  text-align: center;
+    position:relative;
+    left: 400px;
+    border-radius: 50%;
+
+    width: 144px;
+    height: 144px;
+    padding: 32px;
+
+    background: #fff;
+    border: 8px solid #666;
+    color: #666;
+    text-align: center;
+
+    font: 128px Arial, sans-serif;
 }

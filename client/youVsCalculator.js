@@ -10,27 +10,27 @@ var youVsZuckerberg = function(userIncome) {
     return "You must be apart of the Rothschild's family, or be a king";
   } else if(userIncome >= zuckIncomeMonthly) {
     var monthlyIncomeAnswer = userIncome/zuckIncomeMonthly;
-     return "it would take Zuckerberg " +
-     Math.round(monthlyIncomeAnswer * 10)/10 + " months to earn your income";
+     return Math.round(monthlyIncomeAnswer * 10)/10 + saveToScope('months');
   } else if(userIncome >= zuckIncomeDaily) {
     var dailyIncomeAnswer = userIncome/zuckIncomeDaily;
-    return "it would take Zuckerberg " +
-    Math.round(dailyIncomeAnswer * 10)/10 + " days to earn your income";
+    return Math.round(dailyIncomeAnswer * 10)/10 + saveToScope('days');
   } else if(userIncome >= zuckIncomeHourly) {
     var hourlyIncomeAnswer = userIncome/zuckIncomeHourly;
-    return "it would take Zuckerberg " +
-    Math.round(hourlyIncomeAnswer * 10)/10 + " hours to earn your income";
+    return Math.round(hourlyIncomeAnswer * 10)/10 + saveToScope('hours');
   } else if(userIncome >= zuckIncomeInMinutes){
     var incomeInMinutesAnswer = userIncome/zuckIncomeInMinutes;
-    return "it would take Zuckerberg " +
-    Math.round(incomeInMinutesAnswer * 10)/10 + " minutes to earn your income";
+    return Math.round(incomeInMinutesAnswer * 10)/10 + saveToScope('minutes');
   } else if(userIncome >= zuckIncomeInSeconds ) {
     var incomeInSecondsAnswer = userIncome/zuckIncomeInSeconds;
-    return "It would take Zuckerberg " +
-    Math.round(incomeInSecondsAnswer * 10)/10 + " seconds to earn your income";
+    return Math.round(incomeInSecondsAnswer * 10)/10 + saveToScope('seconds');
   } else {
     return "Zuckerberg earned your income so fast its not even calculable";
   }
+};
+
+var saveToScope = function(value) {
+  window.test = ' ' + value;
+  return window.test;
 };
 
 var perspectiveHelperYearly = function(userIncome) {
