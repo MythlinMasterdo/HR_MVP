@@ -62,7 +62,13 @@ var App = angular.module('app', [])
   };
 
   $scope.scrollToSelection4 = function() {
-    $.scrollTo({left: -1500, top: 3200}, {
+    $.scrollTo({left: -1500, top: 3180}, {
+      duration: 800
+    });
+  };
+
+  $scope.scrollToSelection5 = function() {
+    $.scrollTo({left: -1500, top: 4300}, {
       duration: 800
     });
   };
