@@ -4,19 +4,19 @@
   text-align: center;
 }
 .hasEarned {
-  background-color: #dfe3ee;
+  color: white;
 }
 
 .forYou {
-  background-color: #dfe3ee;
+  color: white;
 }
 
 .perspective {
-  background-color: #dfe3ee;
+  color: white;
 }
 
 body {
-  background-color: #8b9dc3;
+  background-color: black;
 }
 
 .incomeInfo {
@@ -31,20 +31,24 @@ body {
   height: 5%;
 }
 
+.md-display-2 {
+  color: white;
+}
+
 .numberCircle {
   text-align: center;
     position:relative;
     left: 400px;
     border-radius: 50%;
 
-    width: 144px;
-    height: 144px;
+    width: 288px;
+    height: 288px;
     padding: 32px;
 
-    background: #fff;
-    border: 8px solid #666;
-    color: #666;
+    background: #3b5998;
+    border: 16px solid #666;
+    color: white;
     text-align: center;
 
-    font: 128px Arial, sans-serif;
+    font: 235px Arial, sans-serif;
 }
