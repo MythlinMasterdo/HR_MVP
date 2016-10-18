@@ -78,10 +78,16 @@ var App = angular.module('app', [])
     $.scrollTo({left: -1500, top: 5000}, {
       duration: 800
     });
-    $('.scrollBtn5').css('display', 'none');
   };
 
   $scope.scrollToSelection7 = function() {
+    $.scrollTo({left: -1500, top: 5620}, {
+      duration: 800
+    });
+    $('.scrollBtn6').css('display', 'none');
+  };
+
+  $scope.scrollToSelection8 = function() {
     $.scrollTo({left: -1500, top: 0}, {
       duration: 800
     });

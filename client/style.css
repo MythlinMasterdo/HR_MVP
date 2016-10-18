@@ -218,16 +218,6 @@ body {
   top: -85px;
 }
 
-.scrollBtn6 {
-  position: relative;
-  left: 600px;
-  top: -610px;
-  width: 5%;
-  height: 5%;
-  -webkit-transform: rotate(180deg);
-  transform: rotate(180deg);
-}
-
 .userStats {
   color: white;
   font-family: 'Roboto', sans-serif;
@@ -249,4 +239,21 @@ body {
 
 .userIncomeTitle {
   font-size: 40px;
+}
+
+.scrollBtn6 {
+  position: relative;
+  left: 600px;
+  width: 5%;
+  height: 5%;
+}
+
+.scrollBtn7 {
+  position: relative;
+  left: 600px;
+  top: -750px;
+  width: 5%;
+  height: 5%;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
