@@ -72,4 +72,17 @@ var App = angular.module('app', [])
       duration: 800
     });
   };
+
+  $scope.scrollToSelection6 = function() {
+    $.scrollTo({left: -1500, top: 5000}, {
+      duration: 800
+    });
+    $('.scrollBtn5').css('display', 'none');
+  };
+
+  $scope.scrollToSelection7 = function() {
+    $.scrollTo({left: -1500, top: 0}, {
+      duration: 800
+    });
+  };
 });

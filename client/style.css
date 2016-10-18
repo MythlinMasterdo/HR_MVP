@@ -209,3 +209,21 @@ body {
   left: 1150px;
   top: -430px;
 }
+
+.scrollBtn5 {
+  position: relative;
+  width: 5%;
+  height: 5%;
+  left: 600px;
+  top: -85px;
+}
+
+.scrollBtn6 {
+  position: relative;
+  left: 600px;
+  top: -610px;
+  width: 5%;
+  height: 5%;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
