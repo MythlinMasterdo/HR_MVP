@@ -10,17 +10,24 @@
 .forYou {
   color: white;
   font-size: 64px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .markIncomeYearly {
   color: white;
-  font-size: 64px;
-
+  font-size: 56px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .markIncomeDaily {
   color: white;
   font-size: 64px;
+  font-family: 'Roboto', sans-serif;
+}
+.markIncomeDailyNumber {
+  color: white;
+  font-size: 78px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .perspective {
@@ -76,5 +83,27 @@ body {
     color: white;
     text-align: center;
 
-    font: 235px Arial, sans-serif;
+    font: 230px 'Roboto', sans-serif;
+}
+
+.studentIcon {
+  width: 85%;
+  height: 85%;
+}
+
+.studentHr {
+  color: white;
+  font-size:64px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.columns {
+  -webkit-column-count: 3;
+  column-count: 3;
+  -webkit-column-rule-style: solid;
+  column-rule-style: solid;
+  -webkit-column-rule-width: 2px;
+  column-rule-width: 2px;
+  -webkit-column-rule-color: #3b5998;
+  column-rule-color: #3b5998;
 }
