@@ -10,18 +10,17 @@ var App = angular.module('app', [])
   });
 
   $scope.income = undefined;
-
+  $scope.incomeToday = 0;
   $http.get('/api/income')
     .success(function(data) {
-      console.log('get data', data);
+      for(var i = 0; i < data.length; i++) {
+        $scope.incomeToday = $scope.incomeToday += data[i].income;
+      }
+      console.log('income today', $scope.incomeToday);
     })
     .error(function(data) {
       console.log('get err', data);
     });
-
-    var incomeData = {
-      income: $scope.income
-    };
 
   $scope.saveIncome = function() {
     $http.post('/api/income', {income: $scope.income})
