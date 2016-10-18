@@ -9,3 +9,4 @@ my functions in my JS files.
 
 
 how many homes in sf he could buy
+add up the incomes of everyone who has entered their income and compare it
