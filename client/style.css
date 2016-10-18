@@ -7,10 +7,41 @@
   color: white;
 }
 
-.forYou {
-  color: white;
-  font-size: 64px;
+.billion {
+  color: #3b5998;
+  font-size: 75px;
   font-family: 'Roboto', sans-serif;
+}
+
+.wrapperForYou {
+  text-align: center;
+}
+
+.forYou {
+  display: inline;
+  color: #3b5998;
+  font-size: 95px;
+  font-family: 'Roboto', sans-serif;
+  border-style: solid;
+  border-color: #3b5998;
+  border-width: 2px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  width: 30%;
+  float: center;
+}
+
+.yearsToEarn {
+  text-align: center;
+  margin: auto;
+  position: relative !important;
+  text-align: center !important;
+}
+
+.dailyAverage {
+  position: relative !important;
+  left: 300px !important;
+  top: -420px !important;
 }
 
 .markIncomeYearly {
@@ -21,13 +52,25 @@
 
 .markIncomeDaily {
   color: white;
-  font-size: 64px;
+  font-size: 50px;
   font-family: 'Roboto', sans-serif;
 }
 .markIncomeDailyNumber {
-  color: white;
-  font-size: 78px;
+  color: #3b5998;
+  font-size: 70px;
   font-family: 'Roboto', sans-serif;
+}
+
+.itWould {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 64px;
+}
+
+.earnSame {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 64px;
 }
 
 .perspective {
@@ -97,13 +140,8 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-.columns {
-  -webkit-column-count: 3;
-  column-count: 3;
-  -webkit-column-rule-style: solid;
-  column-rule-style: solid;
-  -webkit-column-rule-width: 2px;
-  column-rule-width: 2px;
-  -webkit-column-rule-color: #3b5998;
-  column-rule-color: #3b5998;
+.earned2015 {
+  position: relative !important;
+  left: 50px !important;
+  text-align: left !important;
 }
