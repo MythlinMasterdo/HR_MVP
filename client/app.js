@@ -43,9 +43,15 @@ var App = angular.module('app', [])
     $('#bottom').css('display', 'block');
   };
 
-  $scope.scrollToSelection = function() {
+  $scope.scrollToSelection1 = function() {
     $.scrollTo('.numberCircle', {
       duration: 600
+    });
+  };
+
+  $scope.scrollToSelection2 = function() {
+    $.scrollTo({left: -1500, top: 1500}, {
+      duration: 800
     });
   };
 });
